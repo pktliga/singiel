@@ -125,15 +125,40 @@
     </nav>
 
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-          <br>
 
-      <div class="container" style="width: 100%;height:650px;" >
+      <br>
+      <div class="table-responsive">
+        <div class="selectback">
+              <select id="mySelect" onchange="formsubmit();">
+                <option value="1">Regulamin</option>
+                <!--<option value="2">PLD Regulamin</option>-->
+              </select>
+            </div>
+              <iframe id="link" src="./pdf/PKT Liga  Singlowa -  Pobiedziska Lato 2023.pdf" width="100%" height="800px"></iframe>
 
-            <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTY0le0uo3mxbvvk08EUspp5c5vBIKQbA_PGQgtWcJ4uIdKemboB-TZwSSq3gBlDsGZl5kvn53t6QoL/pubhtml?gid=1262947696&single=true" width="100%" height="100%"></iframe>
+              <script>
+              /*
+              function formsubmit(){
+                var a = document.getElementById("link");
+                var b = document.getElementById("mySelect").value;
 
-</div>
+
+                switch (b) {
+                  case '1':
+                  a.setAttribute('src','./pdf/kolejnosc_rozgrywania_meczy.pdf');
+                    break;
+                  case '2':
+                    a.setAttribute('src','./pdf/PLD_Regulamin_20_21_v2.pdf');
+
+                    break;
+                }
+              }*/
 
 
+
+              </script>
+
+      </div>
 
     </main>
   </div>
